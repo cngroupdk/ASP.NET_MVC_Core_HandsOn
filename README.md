@@ -1,39 +1,21 @@
-# Welcome to ASP.NET Core
+# Hands-on ASP.NET MVC Core 1.0
 
-We've made some big updates in this release, so it’s **important** that you spend a few minutes to learn what’s new.
+ASP.NET Core is multiplatform, so you will be able to follow as long as you meet the minimal requirements described below. No matter if you prefer OS X, Windows or Linux and develop in Sublime Text, Atom, VS Code, Notepad, Vim, Visual Studio or something else you can use any of those. As a matter of fact any text editor will do, but if you use one of the major ones, the experience will be more flawless for you. Same goes for your command line, anything will do, and you don't need any mad hacker skills, absolute basics are enough. 
 
-You've created a new ASP.NET Core project. [Learn what's new](https://go.microsoft.com/fwlink/?LinkId=518016)
+Throughout the course I will spend some time in Visual Studio, but I will do all the coding in VS Code to make sure everybody can follow. **Full Visual Studio is not required for this course.**
 
-## This application consists of:
+### Installation steps:
 
-*   Sample pages using ASP.NET Core MVC
-*   [Gulp](https://go.microsoft.com/fwlink/?LinkId=518007) and [Bower](https://go.microsoft.com/fwlink/?LinkId=518004) for managing client-side libraries
-*   Theming using [Bootstrap](https://go.microsoft.com/fwlink/?LinkID=398939)
+1. Install DOT.NET Core from it's [official website](https://www.microsoft.com/net/core), [list of supported operating systems](https://www.microsoft.com/net/download). Please follow **all four steps**, to validate that you can in fact run DOT.NET Core on your system.
+(Make sure to checkout the known workaround if you have `zsh` installed on OS X, or [this tutorial](http://donovanbrown.com/post/2016/05/29/Installing-NET-Core-RC2-on-Ubuntu-1604) for Ubuntu 16.06)
 
-## How to
+2. We will be using `npm` to manage packages. Install the current version of [node.js (v6.2.1)](node.js).
 
-*   [Add a Controller and View](https://go.microsoft.com/fwlink/?LinkID=398600)
-*   [Add an appsetting in config and access it in app.](https://go.microsoft.com/fwlink/?LinkID=699562)
-*   [Manage User Secrets using Secret Manager.](https://go.microsoft.com/fwlink/?LinkId=699315)
-*   [Use logging to log a message.](https://go.microsoft.com/fwlink/?LinkId=699316)
-*   [Add packages using NuGet.](https://go.microsoft.com/fwlink/?LinkId=699317)
-*   [Add client packages using Bower.](https://go.microsoft.com/fwlink/?LinkId=699318)
-*   [Target development, staging or production environment.](https://go.microsoft.com/fwlink/?LinkId=699319)
+3. Install necessary npm packages globally. In an *administrator/sudo* command line run `npm install -g gulp bower yo generator-aspnet`.
 
-## Overview
 
-*   [Conceptual overview of what is ASP.NET Core](https://go.microsoft.com/fwlink/?LinkId=518008)
-*   [Fundamentals of ASP.NET Core such as Startup and middleware.](https://go.microsoft.com/fwlink/?LinkId=699320)
-*   [Working with Data](https://go.microsoft.com/fwlink/?LinkId=398602)
-*   [Security](https://go.microsoft.com/fwlink/?LinkId=398603)
-*   [Client side development](https://go.microsoft.com/fwlink/?LinkID=699321)
-*   [Develop on different platforms](https://go.microsoft.com/fwlink/?LinkID=699322)
-*   [Read more on the documentation site](https://go.microsoft.com/fwlink/?LinkID=699323)
+4. *(optional)* To see exactly what I see, install [Visual Studio Code](https://code.visualstudio.com). 
+If you prefer other editor, check out [OmniSharp](http://www.omnisharp.net) which provides code completion (IntelliSense) in multiple major text editors such as [Atom](http://atom.io) or [Sublime Text](https://www.sublimetext.com/3). 
 
-## Run & Deploy
 
-*   [Run your app](https://go.microsoft.com/fwlink/?LinkID=517851)
-*   [Run tools such as EF migrations and more](https://go.microsoft.com/fwlink/?LinkID=517853)
-*   [Publish to Microsoft Azure Web Apps](https://go.microsoft.com/fwlink/?LinkID=398609)
-
-We would love to hear your [feedback](https://go.microsoft.com/fwlink/?LinkId=518015)
+See you soon!
