@@ -30,6 +30,11 @@
                 <h2>@Model.SensorCount.Value</h2>
             </div>
         </div>
+        <div class="row">
+            <div class="one-half column">
+                @(await Component.InvokeAsync<AlertsViewComponent>())
+            </div>
+        </div>
     </div>
 </body>
 </html>

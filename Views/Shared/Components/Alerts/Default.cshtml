@@ -1,0 +1,27 @@
+@model List<HandsOn.ViewModels.AlertViewModel>
+
+<table>
+    <thead>
+        <tr>
+            <th>
+                Source
+            </th>
+            <th>
+                Message
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var alert in @Model)
+        {
+            <tr>
+                <td>
+                    @alert.Source
+                </td>
+                <td>
+                    @alert.Message
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
