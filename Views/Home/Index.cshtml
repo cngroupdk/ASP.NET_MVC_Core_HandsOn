@@ -40,6 +40,7 @@
             </div>
         </div>
     </div>
+
     <environment names="Production">
     <script src="https://code.jquery.com/jquery-3.0.0.min.js" 
         integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"
@@ -47,17 +48,20 @@
     </script>
     </environment>
     <environment names="Development,Staging">
-        <script src="~/lib/jquery/dist/jquery.js">></script>
+        <script src="~/lib/jquery/dist/jquery.js"></script>
     </environment>
     <script src="~/lib/chartist/dist/chartist.js"></script>
     <script>
-        $(function(){
+    $(function(){
             $.getJSON("@Url.Content("~/api/temperature")", function (data){
                 new Chartist.Line("#chart", {
                     labels: data.Labels,
                     series: [data.data]
+                }).catch(function (err) {
+                    console.log(err);
                 });
             });
         });
+    </script>
 </body>
 </html>
