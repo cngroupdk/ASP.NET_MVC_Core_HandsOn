@@ -1,3 +1,5 @@
+@model HandsOn.ViewModels.IndexViewModel
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,6 +19,12 @@
         <div class="row logo">
             <img src="~/img/logo.png" alt="Our logo" asp-append-version="true">
             <h1>Floor Monitor<h1>
+        </div>
+        <div class="row">
+            <div class="one-half column">
+                <p>@Model.CurrentTemperature.Description</p>
+                <h2>@Model.CurrentTemperature.Value</h2>
+            </div>
         </div>
     </div>
 </body>
