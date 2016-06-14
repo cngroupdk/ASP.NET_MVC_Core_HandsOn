@@ -21,9 +21,13 @@
             <h1>Floor Monitor<h1>
         </div>
         <div class="row">
-            <div class="one-half column">
+            <div class="one-half column tile">
                 <p>@Model.CurrentTemperature.Description</p>
                 <h2>@Model.CurrentTemperature.Value</h2>
+            </div>
+            <div class="one-half column tile">
+                <p>@Model.SensorCount.Description</p>
+                <h2>@Model.SensorCount.Value</h2>
             </div>
         </div>
     </div>

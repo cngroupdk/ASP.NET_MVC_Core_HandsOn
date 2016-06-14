@@ -7,3 +7,8 @@
 .logo h1 { 
     display: inline-block;
 }
+
+.tile {
+    border: 1px solid black;
+    padding: 10px;
+}

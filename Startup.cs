@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using HandsOn.Models;
 
 
 namespace HandsOn
@@ -20,6 +21,9 @@ namespace HandsOn
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+
+            // registering our own services 
+            services.AddSingleton<IFloorMonitor, FloorMonitor>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
