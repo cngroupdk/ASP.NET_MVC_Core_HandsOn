@@ -3,7 +3,7 @@ using HandsOn.Models;
 using HandsOn.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
-namespace HandsOn
+namespace HandsOn.Controllers
 {
     public class HomeController : Controller
     {
