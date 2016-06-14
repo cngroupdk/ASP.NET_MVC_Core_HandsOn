@@ -28,7 +28,9 @@ namespace HandsOn
             if(_environment.IsDevelopment())
                 app.UseDeveloperExceptionPage(); 
 
-            app.UseMvc();
+            //"default"
+            // /{controller=Home}/{action=Index}/{id?}
+            app.UseMvcWithDefaultRoute();
 
             app.UseDefaultFiles();
             app.UseStaticFiles();
