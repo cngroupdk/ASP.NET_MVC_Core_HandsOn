@@ -17,6 +17,7 @@
   ],
   "dependencies": {
     "skeleton": "2.0.4",
-    "chartist":"0.9.7"
+    "chartist":"0.9.7",
+    "jquery":"3.0.0"
   }
 }
