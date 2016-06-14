@@ -9,7 +9,8 @@
     "Microsoft.AspNetCore.StaticFiles":"1.0.0-rc2-final",
     "Microsoft.AspNetCore.Diagnostics":"1.0.0-rc2-final",
     "Microsoft.AspNetCore.Mvc" :"1.0.0-rc2-final",
-    "Microsoft.AspNetCore.Mvc.TagHelpers": "1.0.0-rc2-final"
+    "Microsoft.AspNetCore.Mvc.TagHelpers": "1.0.0-rc2-final",
+    "Newtonsoft.Json": "8.0.3"
   },
 
   "tools": {
