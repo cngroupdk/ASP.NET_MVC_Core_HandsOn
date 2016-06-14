@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="~/lib/skeleton/css/normalize.css">
   <link rel="stylesheet" href="~/lib/skeleton/css/skeleton.css">
   <link href="~/css/site.css" rel="stylesheet">
+  <link href="~/lib/chartist/dist/chartist.css" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -36,5 +37,15 @@
             </div>
         </div>
     </div>
+    <environment names="Production">
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js" 
+        integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"
+        asp-fallback-test="window.jQuery" asp-fallback-src="~/lib/jquery/dist/jquery.min.js">
+    </script>
+    </environment>
+    <environment names="Development,Staging">
+        <script src="~/lib/jquery/dist/jquery.js">></script>
+    </environment>
+    <script src="~/lib/chartist/dist/chartist.js"></script>
 </body>
 </html>
