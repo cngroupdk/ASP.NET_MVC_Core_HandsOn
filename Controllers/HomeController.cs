@@ -1,11 +1,12 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace  HandsOn
+namespace HandsOn
 {
-    public class HomeController : Controller  { 
-        public string Index()
-         { 
-            return "our awesome home controller";
+    public class HomeController : Controller
+    {
+        public IActionResult Index()
+        {
+            return View();
         }
     }
 }
