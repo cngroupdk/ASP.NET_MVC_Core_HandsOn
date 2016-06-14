@@ -32,6 +32,9 @@
             </div>
         </div>
         <div class="row">
+            <div id="chart"></div>
+        </div>
+        <div class="row">
             <div class="one-half column">
                 @(await Component.InvokeAsync<AlertsViewComponent>())
             </div>
@@ -47,5 +50,14 @@
         <script src="~/lib/jquery/dist/jquery.js">></script>
     </environment>
     <script src="~/lib/chartist/dist/chartist.js"></script>
+    <script>
+        $(function(){
+            $.getJSON("@Url.Content("~/api/temperature")", function (data){
+                new Chartist.Line("#chart", {
+                    labels: data.Labels,
+                    series: [data.data]
+                });
+            });
+        });
 </body>
 </html>
