@@ -1,5 +1,9 @@
 # Hands-on ASP.NET MVC Core 1.0
 
+### Update: This repository now contains the resources that were prepared for the talk on the `master` branch. And the sources that were writted during the actual presentation on the `WhatWeDoneTogether` branch. 
+
+---
+
 ASP.NET Core is multiplatform, so you will be able to follow as long as you meet the minimal requirements described below. No matter if you prefer OS X, Windows or Linux and develop in Sublime Text, Atom, VS Code, Notepad, Vim, Visual Studio or something else you can use any of those. As a matter of fact any text editor will do, but if you use one of the major ones, the experience will be more flawless for you. Same goes for your command line, anything will do, and you don't need any mad hacker skills, absolute basics are enough. 
 
 Throughout the course I will spend some time in Visual Studio, but I will do all the coding in VS Code to make sure everybody can follow. **Full Visual Studio is not required for this course.**
